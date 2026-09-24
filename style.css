@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+header {
+    background: #0f172a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+header nav ul li a:hover {
+    color: #38bdf8;
+}
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+.profile-avatar {
+    width: 140px;
+    height: 140px;
+    background: #38bdf8;
+    color: #0f172a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin: 0 auto 1.5rem auto;
+    border: 4px solid #fff;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.hero h3 {
+    font-size: 1.2rem;
+    color: #38bdf8;
+    margin-bottom: 1rem;
+}
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+    color: #cbd5e1;
+}
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+}
+.primary-btn {
+    background: #38bdf8;
+    color: #0f172a;
+    transition: background 0.3s;
+}
+.primary-btn:hover {
+    background: #0ea5e9;
+}
+.secondary-btn {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #38bdf8;
+    transition: background 0.3s;
+}
+.secondary-btn:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+.social-icons {
+    margin-top: 1.5rem;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #38bdf8;
+}
+.section {
+    padding: 4rem 10%;
+}
+.light-bg {
+    background: #ffffff;
+}
+.section h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    color: #0f172a;
+}
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.about-box {
+    background: #f1f5f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+.about-box h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #0f172a;
+}
+.about-box ul {
+    padding-left: 20px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.skill-category {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+}
+.skill-tags span {
+    background: #e2e8f0;
+    color: #1e293b;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.project-card, .cert-card, .resume-box {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-left: 4px solid #38bdf8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input, .contact-form textarea {
+    padding: 0.9rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fff;
+}
+footer {
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 5%;
+}
+.footer-content .quick-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+.footer-content .quick-links li {
+    margin: 0 10px;
+}
+.footer-content .quick-links li a {
+    color: #cbd5e1;
+    text-decoration: none;
+}
+.footer-content .quick-links li a:hover {
+    color: #38bdf8;
+}
+@media(max-width: 768px) {
+    .about-container, .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    header {
+        flex-direction: column;
+    }
+    header nav ul {
+        margin-top: 1rem;
+    }
+}
